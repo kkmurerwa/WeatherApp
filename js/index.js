@@ -32,7 +32,7 @@ function getCurrentCity() {
             if (data.city) {
                 fetchData(data.city)
             } else {
-                fetch("Meru")
+                fetchData("Meru")
             }
     })
 }
