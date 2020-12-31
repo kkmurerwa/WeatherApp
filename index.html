@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap Import -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font-awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-control search-bar">
+                    <a href="#" id="search-city"><i class="fa fa-search"></i></a>
+                    <input type="text" id="user-city" class="search-box" placeholder="Search City">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center clock-container">
+            <p class="weather-condition" id="weather-condition">Windy</p>
+            <p class="city" id="city">Meru, Kenya</p>
+            <table class="table text-center borderless">
+                <tbody>
+                  <tr>
+                    <td>
+                        <p class="temperature" id="temperature"></p>
+                        
+                    </td>
+                    <td>
+                        <div class="vl"></div>
+                    </td>
+                    <td class="other-info">
+                        <p id="humidity">Humidity</p>
+                        <p id="wind-speed">Wind speed</p>
+                        <p id="pressure">Pressure</p>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

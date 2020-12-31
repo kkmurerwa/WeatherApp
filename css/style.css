@@ -1,0 +1,70 @@
+:root {
+    --color-hover: cyan;
+    --color-text: #ddd; 
+    --color-primary: #161b22;
+    --color-primary-dark: #06090f;
+    --color-secondary: #131313;
+}
+
+body {
+    margin: 0%;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.clock-div {
+    background-color: red;
+}
+
+.search-bar {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.search-box {
+    border: 0px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.fa {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clock-container {
+    margin: 15vh auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--color-primary-dark);
+}
+
+.other-info {
+    color: var(--color-text);
+    text-align: left;
+    font-size: 22px;
+}
+
+.city {
+    font-size: 45px;
+}
+
+.weather-condition {
+    font-size: 24px;
+}
+
+.temperature {
+    font-size: 80px;
+    color: var(--color-text);
+}
+
+.vl {
+    background-color: white;
+    width: 5px;
+    height: 150px;
+    border-radius: 3px;
+}
+  
