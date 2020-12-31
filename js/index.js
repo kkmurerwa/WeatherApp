@@ -24,17 +24,18 @@ function searchCity() {
 }
 
 function getCurrentCity() {
-    const url = "http://ipinfo.io/?token=20d2d052703e8c"
-    fetch(url, {
-        mode: 'cors'})
-        .then(response => response.json())
-        .then(data => {
-            if (data.city) {
-                fetchData(data.city)
-            } else {
-                fetchData("Meru")
-            }
-    })
+    // const url = "http://ipinfo.io/?token=20d2d052703e8c"
+    // fetch(url, {
+    //     mode: 'cors'})
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         if (data.city) {
+    //             fetchData(data.city)
+    //         } else {
+    //             fetchData("Meru")
+    //         }
+    // })
+    fetchData("Meru")
 }
 
 function fetchData(city) {
