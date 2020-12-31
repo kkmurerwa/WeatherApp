@@ -3,7 +3,7 @@ let previousResponse = ""
 window.onload = (event) => {
     const searchButton = document.getElementById("search-city")
     searchButton.addEventListener("click", function () {
-        getCurrentCity()
+        searchCity()
     })
 
     const searchBox = document.getElementById("user-city")
@@ -29,7 +29,11 @@ function getCurrentCity() {
         mode: 'cors'})
         .then(response => response.json())
         .then(data => {
-            fetchData(data.city)
+            if (data) {
+                fetchData(data.city)
+            } else {
+                fetch("Meru")
+            }
     })
 }
 
