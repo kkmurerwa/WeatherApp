@@ -29,7 +29,7 @@ function getCurrentCity() {
         mode: 'cors'})
         .then(response => response.json())
         .then(data => {
-            if (data) {
+            if (data.city) {
                 fetchData(data.city)
             } else {
                 fetch("Meru")
