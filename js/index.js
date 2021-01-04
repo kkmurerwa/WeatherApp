@@ -23,25 +23,24 @@ function searchCity() {
     fetchData(userCity)
 }
 
-function getCurrentCity() {
-    // const url = "http://ipinfo.io/?token=20d2d052703e8c"
-    // fetch(url, {
-    //     mode: 'cors'})
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         if (data.city) {
-    //             fetchData(data.city)
-    //         } else {
-    //             fetchData("Meru")
-    //         }
-    // })
-    fetchData("Meru")
+async function getCurrentCity() {
+    const url = "http://ipinfo.io/?token=20d2d052703e8c"
+    await fetch(url, {
+        mode: 'cors'})
+        .then(response => response.json())
+        .then(data => {
+            if (data.city) {
+                fetchData(data.city)
+            } else {
+                fetchData("Meru")
+            }
+    })
 }
 
-function fetchData(city) {
+async function fetchData(city) {
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=17ac7bb7aa6eae5c20f2be86852d9567`
 
-    fetch(url, {
+    await fetch(url, {
         mode: 'cors'})
         .then(response => response.json())
         .then(data => {
