@@ -38,7 +38,7 @@ async function getCurrentCity() {
 }
 
 async function fetchData(city) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=17ac7bb7aa6eae5c20f2be86852d9567`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=17ac7bb7aa6eae5c20f2be86852d9567`
 
     await fetch(url, {
         mode: 'cors'})
@@ -55,7 +55,7 @@ async function fetchData(city) {
 }
 
 function getIconURL(icon) {
-    return `http://openweathermap.org/img/wn/${icon}.png`
+    return `https://openweathermap.org/img/wn/${icon}.png`
 }
 
 function populateFields(data){
