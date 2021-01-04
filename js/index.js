@@ -24,7 +24,7 @@ function searchCity() {
 }
 
 async function getCurrentCity() {
-    const url = "http://ipinfo.io/?token=20d2d052703e8c"
+    const url = "https://ipinfo.io/?token=20d2d052703e8c"
     await fetch(url, {
         mode: 'cors'})
         .then(response => response.json())
